@@ -1,0 +1,265 @@
+/********************multiple pages********************/
+
+/*body for all the pages*/
+body{
+	margin: 20px auto;
+	padding: 0;
+	width: 75%;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: 25px solid transparent;
+	border-image: url(../images/border.jpeg) 20 round;
+}
+
+/*header for pages*/
+#title {
+	text-align: center;
+	font-size: 28px;
+	background-color: #98bf21;
+	border-bottom: solid 2px white;
+	padding: 5px;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+/*navigation bar*/
+#nav ul {
+	list-style-type: none;
+	background-color: #98bf21;
+	color: white;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+#nav li {
+	display:inline;
+}
+
+#nav a {
+	text-decoration:none; 
+	padding: 0 30px;
+	border-right: 2px solid #FFFFFF;
+	font-size: 24px;
+	color: #000000;
+}
+
+#nav li a:hover {
+	background-color: green;
+	color: #FFFFFF;
+}
+
+#nav .first {
+	border-left: 2px solid #FFFFFF;
+}
+
+#container {
+	background-color: #E4717A;
+	padding: 30px;
+	margin: 0 auto;
+	font-family:  Verdana, Geneva, sans-serif;
+}
+
+/*footer for citations*/
+footer {
+	background-color: #E4717A;
+	margin: 0 auto;
+	border-top: solid 2px white;
+	padding: 5px;
+	font-size: 14px;
+}
+
+/*section headers*/
+.section {
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #98bf21;
+	padding: 5px;
+	margin: 0;
+}
+
+/*subheaders*/
+.subtext {
+	font-weight: bold;
+	font-style: italic;
+	display: inline;
+}
+
+/*links*/
+#container a {
+	color: #FCC9CD;
+}
+
+/*various paragraph classes in container div*/
+.about, .basic, .subtext, .apps, .schedule {
+	font-size: 16px;
+}
+
+/*festival and parking map*/
+.map {
+	width: 50%;
+}
+
+
+/********************index.html only********************/
+
+/*list of basic information*/
+.basic {
+	padding-left: 10px;
+	list-style-type: none;
+}
+
+/*festival collage image*/
+.festival {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/********************events.html only********************/
+
+/*festival schedule*/
+.schedule {
+	padding-left: 20px;
+	margin: 0;
+}
+
+/*Other Events list*/
+.events {
+	list-style-type: none;
+	padding: 5px;
+}
+
+.sublist {
+	padding-top: 20px;
+}
+
+/*Other Events images*/
+.events img {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.gallery, .pfest {
+	width: 30%;
+}
+
+.nizer {
+	width:25%;
+}
+
+.pie {
+	float: right;
+	width: 25%;
+	margin-top: 15%;
+	margin-right: 15%;
+}
+
+/********************transport.html only********************/
+
+/*route text*/
+.routes {
+	margin: 0;
+	display: inline;
+}
+
+/*route links*/
+.routes a {
+	text-decoration: none;
+}
+
+/********************info.html only********************/
+
+/*vendors list*/
+.vendors {
+	width: 50%;
+}
+
+/*images in photograph section*/
+#fest_images {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#fest_images img {
+	display: inline-block;
+	padding: 10px;
+}
+
+/*horizantally oriented images only*/
+.horizantal img {
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+}
+
+/*vertically oriented images only*/
+.vertical img {
+	width: 200px;
+	height: 275px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 55px;
+	padding-left: 55px;
+}
+
+@media screen and (max-width: 480px){
+
+	html, body{
+		background-image: none;
+		border: none;
+		width: 100%;
+		margin: 0;
+		overflow-x: hidden;
+		word-wrap: break-word;
+	}
+
+	#title{
+		font-size: 22px;
+	}
+
+	#nav li{
+		display: block;
+		border-bottom: solid 2px white;
+	}
+
+	#nav a {
+		border-right: none;
+		font-size: 22px;
+	}
+
+	#nav .first {
+		border-left: none;
+	}
+
+	.festival, .map, .bus, .gallery, .pfest, .nizer, .vendors{
+		width:75%;
+		height: 75%;
+	}
+
+	.pie{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 50%;
+		height: 50%;
+		float: none;
+	}
+
+	#fest_images{
+		text-align: left;
+	}
+
+	#fest_images img{
+		display: block;
+		width: 75%;
+		height: 75%;
+		padding: 3px;
+	}
+}
